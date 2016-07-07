@@ -2,6 +2,8 @@ require 'json'
 require 'nokogiri'
 require 'httparty'
 require './lib/scraper'
+require 'shotgun'
+require 'pry'
 require 'sinatra'
 require 'newrelic_rpm'
 

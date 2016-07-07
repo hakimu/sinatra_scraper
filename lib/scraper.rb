@@ -1,5 +1,6 @@
 require 'json'
 require 'nokogiri'
+require 'pry'
 require 'httparty'
 
 class NprScraper
@@ -28,6 +29,7 @@ class NprScraper
 
 end
 
+# puts NprScraper.new.parse_artist
 # puts NprScraper.new.parse_artist
 
 # foo = NprScraper.new

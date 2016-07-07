@@ -12,12 +12,12 @@ artist = []
 parse_page.css('.song-meta-wrap')
 
 parse_page.css('.song-meta-wrap').map do |a|
-  song_title.push(a.css('.song-meta-title'))
-	artist.push(a.css('.song-meta-artist'))
+  song_title.push(a.css('.song-meta-title').text)
+	artist.push(a.css('.song-meta-artist').text)
 end
 puts song_title
 puts artist
-[song_title, artist]
+# [song_title, artist]
 
 # class Scrape
 # 	def scrape_page
