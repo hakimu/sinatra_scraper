@@ -27,21 +27,12 @@ DataMapper.finalize.auto_upgrade!
 class NprBump < Sinatra::Base
 
 	get '/' do
-    @artist = NprScraper.new.parse_artist
-    @title = NprScraper.new.parse_song_title
-    @stuff = Song.all
+    @artists = NprScraper.new.parse_artist[0]
+    @titles = NprScraper.new.parse_song_title
+    # @stuff = Song.all
 		erb :index
 	end
 
-	post '/' do
-		test = Song.new
-		test.song_title = "The Root"
-		test.artist = "D'Angelo"
-		test.created_at = Time.now
-		test.updated_at = Time.now
-		test.save
-		redirect '/'
-	end
 
 end
 

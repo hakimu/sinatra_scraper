@@ -14,22 +14,22 @@ class NprScraper
   end
 
   def parse_artist
-  	artist = []
+  	artists = []
   	parse_scraped_page.css('.song-meta-wrap').map do |a|
-  		artist.push(a.css('.song-meta-artist').text)
+  		artists.push(a.css('.song-meta-artist').text)
   	end
   end
 
   def parse_song_title
-  	song_title = []
+  	song_titles = []
   	parse_scraped_page.css('.song-meta-wrap').map do |a|
-  		song_title.push(a.css('.song-meta-title').text)
+  		song_titles.push(a.css('.song-meta-title').text)
   	end
   end
 
 end
 
-# puts NprScraper.new.parse_artist
+puts NprScraper.new.parse_artist.inspect
 # puts NprScraper.new.parse_artist
 
 # foo = NprScraper.new
