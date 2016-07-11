@@ -1,14 +1,4 @@
-<% @stuff.each do |s| %>
-  <p><%= s.song_title %></p>
-  <p><%= s.artist %></p>
+<% @songs.each do |song| %>
+  <p><%= song.song_title %></p>
+  <p><%= song.artist %></p>
 <% end %>
-<p>There are <%= @artists.count  %> artist that are pulled</p>
-<p>=====================================================</p>
-<% @artists.each do |artist| %>
-  <p><%= artist %></p>
- <% end %>
-<p>There are <%= @titles.count  %> title that are pulled</p>
-<p>=====================================================</p>
-<% @titles.each do |title| %>
-  <p><%= title %></p>
- <% end %>
