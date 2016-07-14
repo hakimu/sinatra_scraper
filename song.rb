@@ -25,6 +25,7 @@ class Song
     end
     songs.created_at = DateTime.now
     songs.updated_at = DateTime.now
+    # binding.pry
     songs.save
   end
 

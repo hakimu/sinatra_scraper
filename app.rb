@@ -10,7 +10,11 @@ class NprBump < Sinatra::Base
 
   get '/' do
     @songs = Song.all
-		erb :index
+  	erb :index
+	end
+
+	get '/song' do
+		@test = Song.new.create_song
 	end
 
 end
