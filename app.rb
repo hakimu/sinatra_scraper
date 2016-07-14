@@ -14,7 +14,7 @@ class NprBump < Sinatra::Base
 	end
 
 	get '/song' do
-		@test = Song.new.create_song
+		@test = Song.new.add_songs_to_database
 	end
 
 end
