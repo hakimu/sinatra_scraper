@@ -10,11 +10,11 @@ class NprBump < Sinatra::Base
 
   get '/' do
     @songs = Song.all
-  	erb :index
+    erb :index
 	end
 
 	get '/song' do
-		@test = Song.new.add_songs_to_database
+    @test = Song.new.add_songs_to_database
 	end
 
 end

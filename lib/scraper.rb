@@ -29,12 +29,7 @@ class NprScraper
 
 end
 
-# puts NprScraper.new.parse_artist.inspect
-# puts NprScraper.new.parse_artist
-
-# foo = NprScraper.new
-# puts foo.parse_artist
-# puts foo.parse_song_title
+# Maybe look at scraping based on '.icn-music-note'
 
 
 

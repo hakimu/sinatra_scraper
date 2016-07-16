@@ -31,6 +31,8 @@ class Song
   #   songs.save
   # end
 
+  # Need to check for valid artist and title.  On 7/14/16 some songs did not have artist.
+
   def add_songs_to_database
     titles = NprScraper.new.parse_song_title[0]
     artists = NprScraper.new.parse_artist[0]
